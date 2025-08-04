@@ -1,0 +1,27 @@
+{
+    "name": "SerialMessageEvents",
+    "version": "0.5.0",
+    "description": "A Serial Message Events Library for converting a Serial stream to messages and optionally to key/value pair records ",
+    "keywords": "Arduino, ESP8266, ESP32, Teensy, serial, message, key-value, events",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/Stutchbury/SerialMessageEvents.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Philip Fletcher",
+        "email": "philip.fletcher@stutchbury.com",
+        "url": "https://stutchbury.com",
+        "maintainer": true
+      }
+    ],
+    "license": "GPL-2.0",
+    "homepage": "https://github.com/Stutchbury/SerialMessageEvents/",
+    "dependencies": {
+    },
+    "frameworks": "Arduino",
+    "platforms": "*"
+  }
+  
