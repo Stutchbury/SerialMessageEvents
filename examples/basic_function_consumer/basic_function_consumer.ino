@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
-#include "serial/ArduinoSerial.h"       //An adapter for the standard Arduino Serial port
-#include "framers/CrLfMessageFramer.h"  //Strips CR/LF from input and passes message  to...
+#include "SerialAdapter/ArduinoSerial.h"       //An adapter for the standard Arduino Serial port
+#include "Framer/CrLfMessageFramer.h"  //Strips CR/LF from input and passes message  to...
 #include "DefaultEventMessenger.h"      //...the default messenger
 
 

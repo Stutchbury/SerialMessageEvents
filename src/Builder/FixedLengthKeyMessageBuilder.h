@@ -2,7 +2,7 @@
 #define INPUT_EVENTS_FIXED_LENGTH_KEY_MESSAGE_BUILDER_H
 
 #include "DefaultMessageBuilder.h"
-#include "formatters/IKeyValueEncoder.h"
+#include "Formatter/IKeyValueEncoder.h"
 
 namespace input_events {
 

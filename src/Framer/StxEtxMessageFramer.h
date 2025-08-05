@@ -2,7 +2,7 @@
 #define INPUT_EVENTS_STX_ETX_MESSAGE_FRAMER_H
 
 #include "BaseMessageFramer.h"
-#include "serial/ISerialAdapter.h"
+#include "SerialAdapter/ISerialAdapter.h"
 
 namespace input_events {
 /**

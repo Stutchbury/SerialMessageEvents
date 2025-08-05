@@ -39,7 +39,7 @@ public:
      * @brief Returns number of bytes available for write()
      * 
      * Note: Software UART serial implementations will always return 0
-     * https://docs.arduino.cc/language-reference/en/functions/communication/serial/availableForWrite/#notes-and-warnings
+     * https://docs.arduino.cc/language-reference/en/functions/communication/SerialAdapter/availableForWrite/#notes-and-warnings
      * 
      * @return int 
      */

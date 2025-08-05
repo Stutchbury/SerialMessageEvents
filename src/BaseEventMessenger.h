@@ -6,7 +6,7 @@
 #include <Arduino.h>
 
 #include "IEventMessenger.h"
-#include "framers/IMessageFramer.h"
+#include "Framer/IMessageFramer.h"
 #include "IMessageConsumer.h"
 
 namespace input_events {
