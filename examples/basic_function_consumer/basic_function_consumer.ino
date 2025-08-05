@@ -1,8 +1,10 @@
 #include <Arduino.h>
 
-#include "SerialAdapter/ArduinoSerial.h"       //An adapter for the standard Arduino Serial port
-#include "Framer/CrLfMessageFramer.h"  //Strips CR/LF from input and passes message  to...
-#include "DefaultEventMessenger.h"      //...the default messenger
+// Arduino IDE 2.0 needs to include a class directly in src...
+#include <DefaultEventMessenger.h>          //the default messenger
+//...before including files in sub-directories  \_0_/
+#include <SerialAdapter/ArduinoSerial.h>    //An adapter for the standard Arduino Serial port
+#include <Framer/CrLfMessageFramer.h>       //Strips CR/LF from input and passes message  to...
 
 
 //A simple message consumer function that implements the IMessageConsumer::onMessageReceived() method
