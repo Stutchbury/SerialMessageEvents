@@ -12,7 +12,7 @@ namespace input_events {
 class CrLfMessageFramer : public BaseMessageFramer {
 public:
 
-    CrLfMessageFramer(ISerialAdapter* serial) : serial(serial) {}
+    using BaseMessageFramer::BaseMessageFramer;
 
     /**
      * @brief Read from serial to copy the actual message into the readBuffer, set messageStart if required and return message lenght
@@ -50,7 +50,7 @@ public:
      */
     size_t writeMessage(const BasicBufferView& writeBuffer, uint8_t priority=10) override {
     //size_t writeMessage(const BasicBufferView& writeBuffer) override {
-        if (!serial) return 0;
+        if (!this->serial) return 0;
         size_t written = 0;
         written += serial->write(writeBuffer.buffer, writeBuffer.bufferLength);
         const char crlf[] = "\r\n";
@@ -61,7 +61,6 @@ public:
 
 
 private:
-    ISerialAdapter* serial;
     bool messageStarted = false;
     bool messageReady = false;
 

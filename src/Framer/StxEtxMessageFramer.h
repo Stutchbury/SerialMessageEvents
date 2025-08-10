@@ -14,8 +14,7 @@ public:
     static constexpr char STX = '\x02'; // Start of Text
     static constexpr char ETX = '\x03'; // End of Text
 
-    StxEtxMessageFramer(ISerialAdapter* serial) : serial(serial) {}
-
+    using BaseMessageFramer::BaseMessageFramer;
 
     /**
      * @brief Read from serial to copy the actual message into the readBuffer, set messageStart if required and return message length
@@ -72,7 +71,6 @@ public:
 
 
 private:
-    ISerialAdapter* serial;
     bool messageStarted = false;
     bool messageReady = false;
 

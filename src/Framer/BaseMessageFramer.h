@@ -13,6 +13,7 @@ class BaseMessageFramer : public IMessageFramer {
 public:
     virtual ~BaseMessageFramer() = default;
 
+    BaseMessageFramer(ISerialAdapter* serial) : serial(serial) {}
 
     virtual void begin() {
         if ( this->serial != nullptr ) this->serial->begin();
@@ -32,8 +33,8 @@ public:
     }
 
 
-    private:
-    ISerialAdapter* serial;
+    protected:
+    ISerialAdapter* serial = nullptr;
 
 };
 }
