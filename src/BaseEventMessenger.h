@@ -113,8 +113,8 @@ class BaseEventMessenger : public IEventMessenger {
 
     protected:
 
-    IMessageFramer* framer;
-    IMessageConsumer* consumer;
+    IMessageFramer* framer = nullptr;
+    IMessageConsumer* consumer = nullptr;
     IMessageConsumer::MessageReceivedFunction callbackFunction = nullptr;
 
 };

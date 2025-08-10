@@ -109,7 +109,7 @@ class BaseMessageBuilder : public IMessageBuilder {
     private:
 
     //IEventMessenger* messenger;
-    IMessageWriter* writer;
+    IMessageWriter* writer = nullptr;
 
 
 
